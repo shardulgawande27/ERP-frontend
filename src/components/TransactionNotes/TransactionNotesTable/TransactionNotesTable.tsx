@@ -1,5 +1,3 @@
-import { accountsData } from "../../../utils/accountsData";
-
 const statusStyles = {
   Approved: {
     background: "bg-[#B6ECCE]",
