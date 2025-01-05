@@ -29,4 +29,34 @@ export const sidebarData = [
       },
     ],
   },
+  {
+    parent: {
+      label: "Inventroy",
+      link: "/inventory",
+    },
+  },
+  {
+    parent: {
+      label: "Purchase",
+      link: "/purchase",
+    },
+  },
+  {
+    parent: {
+      label: "Payroll",
+      link: "/payroll",
+    },
+  },
+  {
+    parent: {
+      label: "Attendance",
+      link: "/attendance",
+    },
+  },
+  {
+    parent: {
+      label: "Employees",
+      link: "/employees",
+    },
+  },
 ];

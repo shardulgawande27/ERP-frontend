@@ -1,31 +1,31 @@
 import { accountsData } from "../../../utils/accountsData";
 
 const statusStyles = {
-  Approved: {
+  Collected: {
     background: "bg-[#B6ECCE]",
     text: "text-[#056144]",
   },
-  Pending: {
+  ["Past Due"]: {
     background: "bg-[#FDF4BF]",
     text: "text-[#774B04]",
   },
-  Rejected: {
+  Canceled: {
     background: "bg-[#F9CFC1]",
     text: "text-[#720807]",
   },
 };
 
-const VoucherTable = ({ onEdit, items }) => {
+const ChequesTable = ({ onEdit, items }) => {
   return (
     <table className="w-full border-collapse ">
       <thead>
         <tr className=" border-b border-gray-300 font-thin">
-          <td className=" px-4 py-4">Voucher No</td>
+          <td className=" px-4 py-4">cheques No</td>
           <td className=" px-4 py-4">Type</td>
           <td className=" px-4 py-4">Status</td>
-          <td className=" px-4 py-4">Authorized by</td>
           <td className=" px-4 py-4">Date signed</td>
           <td className=" px-4 py-4">Amount</td>
+          <td className=" px-4 py-4">Prepared by</td>
         </tr>
       </thead>
       <tbody>
@@ -35,7 +35,7 @@ const VoucherTable = ({ onEdit, items }) => {
             className="cursor-pointer hover:bg-gray-50 border-b border-gray-300"
             onClick={() => onEdit(item)}
           >
-            <td className=" px-4 py-4">{item.voucherNo}</td>
+            <td className=" px-4 py-4">{item.chequeNo}</td>
             <td className=" px-4 py-4">{item.type}</td>
             <td className="px-4 py-4">
               <span
@@ -46,9 +46,9 @@ const VoucherTable = ({ onEdit, items }) => {
                 {item.status}
               </span>
             </td>
-            <td className=" px-4 py-4">{item.authorizedBy}</td>
             <td className=" px-4 py-4">{item.dateSigned}</td>
             <td className=" px-4 py-4">{item.amount}</td>
+            <td className=" px-4 py-4">{item.preparedBy}</td>
           </tr>
         ))}
       </tbody>
@@ -56,4 +56,4 @@ const VoucherTable = ({ onEdit, items }) => {
   );
 };
 
-export default VoucherTable;
+export default ChequesTable;

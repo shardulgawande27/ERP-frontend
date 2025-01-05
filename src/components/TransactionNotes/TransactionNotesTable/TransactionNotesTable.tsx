@@ -15,17 +15,17 @@ const statusStyles = {
   },
 };
 
-const VoucherTable = ({ onEdit, items }) => {
+const TransactionNotesTable = ({ onEdit, items }) => {
   return (
     <table className="w-full border-collapse ">
       <thead>
         <tr className=" border-b border-gray-300 font-thin">
-          <td className=" px-4 py-4">Voucher No</td>
+          <td className=" px-4 py-4">Note No</td>
           <td className=" px-4 py-4">Type</td>
           <td className=" px-4 py-4">Status</td>
-          <td className=" px-4 py-4">Authorized by</td>
           <td className=" px-4 py-4">Date signed</td>
           <td className=" px-4 py-4">Amount</td>
+          <td className=" px-4 py-4">Prepared by</td>
         </tr>
       </thead>
       <tbody>
@@ -35,7 +35,7 @@ const VoucherTable = ({ onEdit, items }) => {
             className="cursor-pointer hover:bg-gray-50 border-b border-gray-300"
             onClick={() => onEdit(item)}
           >
-            <td className=" px-4 py-4">{item.voucherNo}</td>
+            <td className=" px-4 py-4">{item.noteNo}</td>
             <td className=" px-4 py-4">{item.type}</td>
             <td className="px-4 py-4">
               <span
@@ -46,9 +46,9 @@ const VoucherTable = ({ onEdit, items }) => {
                 {item.status}
               </span>
             </td>
-            <td className=" px-4 py-4">{item.authorizedBy}</td>
             <td className=" px-4 py-4">{item.dateSigned}</td>
             <td className=" px-4 py-4">{item.amount}</td>
+            <td className=" px-4 py-4">{item.preparedBy}</td>
           </tr>
         ))}
       </tbody>
@@ -56,4 +56,4 @@ const VoucherTable = ({ onEdit, items }) => {
   );
 };
 
-export default VoucherTable;
+export default TransactionNotesTable;
