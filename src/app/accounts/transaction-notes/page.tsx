@@ -2,15 +2,14 @@
 import React, { useState } from "react";
 import { accountsData } from "../../../utils/accountsData";
 import Header from "@/components/Header/Header";
-import VoucherTable from "@/components/Voucher/VoucherTable/VoucherTable";
-import VoucherModal from "@/components/Voucher/VoucherModal/VoucherModal";
+
 import DocIcon from "../../../../public/assets/svg-icons/DocIcon";
 import TransactionNotesTable from "@/components/TransactionNotes/TransactionNotesTable/TransactionNotesTable";
 import TransactionNotesModal from "@/components/TransactionNotes/TransactionNotesModal/TransactionNotesModal";
 
 const TransactionNotes = () => {
   const { transactionNotes = {} } = accountsData;
-  const { header = {}, items = [] } = transactionNotes as any;
+  const { header = {}, items = [] } = transactionNotes;
   const { breadcrumb1 = "", breadcrumb2 = "" } = header;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedNote, setSelectedNote] = useState(null);

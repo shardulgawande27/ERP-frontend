@@ -8,7 +8,7 @@ import ChequesModal from "@/components/Cheques/ChequesModal/ChequesModal";
 
 const Cheques = () => {
   const { cheques = {} } = accountsData;
-  const { header = {}, items = [] } = cheques as any;
+  const { header = {}, items = [] } = cheques;
   const { breadcrumb1 = "", breadcrumb2 = "" } = header;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedCheque, setSelectedCheque] = useState(null);

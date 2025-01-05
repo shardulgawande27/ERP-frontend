@@ -8,7 +8,7 @@ import DocIcon from "../../../../public/assets/svg-icons/DocIcon";
 
 const Vouchers = () => {
   const { vouchers = {} } = accountsData;
-  const { header = {}, items = [] } = vouchers as any;
+  const { header = {}, items = [] } = vouchers;
   const { breadcrumb1 = "", breadcrumb2 = "" } = header;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedVoucher, setSelectedVoucher] = useState(null);
