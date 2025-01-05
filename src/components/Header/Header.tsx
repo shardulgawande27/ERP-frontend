@@ -2,7 +2,7 @@ import React from "react";
 import profilePic from "../../../public/assets/images/accounts-profile.png";
 import Image from "next/image";
 
-const Header = (props: any) => {
+const Header = (props) => {
   const { breadcrumb1 = "", breadcrumb2 = "" } = props || {};
   return (
     <div className="w-full flex justify-between px-[32px] py-4 border-[#E1E1E5] border-b">

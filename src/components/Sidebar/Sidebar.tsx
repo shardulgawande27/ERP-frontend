@@ -78,7 +78,7 @@ const Sidebar = () => {
         </button>
         {item.children && (
           <ul
-            className={`pl-12 overflow-hidden transition-[max-height] duration-300 ease-in-out ${
+            className={`ml-8  mt-2 overflow-hidden transition-[max-height] duration-300 ease-in-out  border-l border-[#BCBCBC] ${
               isOpen ? "max-h-96" : "max-h-0"
             }`}
           >
