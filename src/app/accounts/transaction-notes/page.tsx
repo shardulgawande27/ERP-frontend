@@ -123,7 +123,7 @@ const TransactionNotes = () => {
       </div>
       <div className="p-4">
         <div className="mb-4">
-          <h2 className="text-lg font-semibold">Filter Vouchers</h2>
+          <h2 className="text-lg font-semibold">Filter Transaction Notes</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
             {/* Type Dropdown */}
             <select
@@ -208,13 +208,13 @@ const TransactionNotes = () => {
           <div className="flex justify-start gap-4 mt-4">
             <button
               onClick={handleFilter}
-              className="px-4 py-2 bg-blue-500 text-white rounded"
+              className="px-4 py-2 bg-[#4153F0] rounded-lg text-white "
             >
               Filter
             </button>
             <button
               onClick={handleResetFilters}
-              className="px-4 py-2 bg-gray-300 text-black rounded"
+              className="px-4 py-2  text-black rounded"
             >
               Reset Filters
             </button>
@@ -223,7 +223,7 @@ const TransactionNotes = () => {
         <div className="w-full flex justify-end items-center mb-4">
           <button
             onClick={handleCreate}
-            className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white"
+            className="flex items-center gap-2 px-4 py-2 border bg-[#4153F0] rounded-lg text-white"
           >
             <DocIcon />
             Create Note

@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../../../public/assets/images/accounts-profile.png";
+import profilePic from "../../../public/assets/images/user.png";
 import Image from "next/image";
 
 const Header = (props) => {

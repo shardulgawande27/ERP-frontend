@@ -205,13 +205,13 @@ const Vouchers = () => {
           <div className="flex justify-start gap-4 mt-4">
             <button
               onClick={handleFilter}
-              className="px-4 py-2 bg-blue-500 text-white rounded"
+              className="px-4 py-2 bg-[#4153F0] rounded-lg text-white rounded"
             >
               Filter
             </button>
             <button
               onClick={handleResetFilters}
-              className="px-4 py-2 bg-gray-300 text-black rounded"
+              className="px-4 py-2  text-black rounded"
             >
               Reset Filters
             </button>
@@ -220,7 +220,7 @@ const Vouchers = () => {
         <div className="w-full flex justify-end items-center mb-4">
           <button
             onClick={handleCreate}
-            className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white"
+            className="flex items-center gap-2 px-4 py-2 bg-[#4153F0] rounded-lg text-white"
           >
             <DocIcon />
             Create Voucher
